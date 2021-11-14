@@ -5,3 +5,11 @@ CREATE TABLE people  (
                          first_name VARCHAR(20),
                          last_name VARCHAR(20)
 );
+
+DROP TABLE transaction IF EXISTS;
+
+CREATE TABLE transaction  (
+                         ACCOUNT VARCHAR(40) IDENTITY NOT NULL PRIMARY KEY,
+                         AMOUNT BIGINT,
+                         TIMESTAMP DATE
+);
