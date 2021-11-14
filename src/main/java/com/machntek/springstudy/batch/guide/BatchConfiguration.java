@@ -69,7 +69,7 @@ public class BatchConfiguration {
     /**
      *  job을 정의한다. job은 스텝으로 구성되며, 스텝은 각 단계에 reader, processor, writer가 포함될 수 있다.
      *  이 job 정의에서는 job이 실행 상태를 유지하기 위해 DB를 사용하기 때문에 incrementer가 필요하다.
-     *  그 후에 각 step을 리스팅 한다.
+     *  그 후에 각 step을 리스팅 한다.(여기서는 하나의 step임)
      *  job이 끝나고 자바 API가 완벽하게 구성된 작업을 생성한다.
      */
     @Bean
